@@ -1,0 +1,11 @@
+{
+"paintings": [
+  {"image": "some file", "title": "Painting", "desc": "Pretty painting", "Price": 8}
+],
+"poems": [
+  {"image": "some file", "title": "Poem", "desc": "Pretty poem", "Price": 8}
+],
+"resin": [
+  {"image": "some file", "title": "Bracelet", "desc": "Pretty jewelry", "Price": 8}
+]
+}
