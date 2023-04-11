@@ -8,12 +8,23 @@ header {
   background-color: grey;
 }
 header img {
-  height: 10%;
-  width: 10%;
+  max-height: 10%;
+  max-width: 10%;
 }
 main {
   display: flex;
 }
 aside {
+  width: 10vw;
   position: sticky;
+  /* justify-content: center; */
+}
+#gallery {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  width: 80vw;
+  min-height: 10vh;
 }
