@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+header {
+  max-height: 100 px;
+  background-color: grey;
+}
+header img {
+  height: 10%;
+  width: 10%;
+}
+main {
+  display: flex;
+}
+aside {
+  position: sticky;
+}

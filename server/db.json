@@ -1,11 +1,11 @@
 {
 "paintings": [
-  {"image": "some file", "title": "Painting", "desc": "Pretty painting", "Price": 8}
-],
-"poems": [
-  {"image": "some file", "title": "Poem", "desc": "Pretty poem", "Price": 8}
+  {"image": "some file", "title": "Painting", "desc": "Pretty painting", "Price": [3, 30]}
 ],
 "resin": [
-  {"image": "some file", "title": "Bracelet", "desc": "Pretty jewelry", "Price": 8}
+  {"image": "some file", "title": "Resin", "desc": "Cool resin", "Price": 5}
+],
+"jewelry": [
+  {"image": "some file", "title": "Bracelet", "desc": "Sparkly jewelry", "Price": 30}
 ]
 }
