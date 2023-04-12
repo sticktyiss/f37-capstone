@@ -1,11 +1,11 @@
 {
 "paintings": [
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 23},
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 12},
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 45},
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 80},
-  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 55}
+  {"id":0, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"id":1, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 23},
+  {"id":2, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 12},
+  {"id":3, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 45},
+  {"id":4, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 80},
+  {"id":5, "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 55}
 ],
 "resin": [
   {"image": "some file", "title": "Resin", "desc": "Cool resin", "price": 5}

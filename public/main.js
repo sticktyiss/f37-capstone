@@ -44,6 +44,7 @@ const printCard = item => {
     <h3>${item[i].title}</h3>
     <p>${item[i].desc}</p>
     <p class='prices'>${item[i].price}</p>
+    <button class="addItem" onclick="addToBucket(${item[i].id})">Add to bucket</button>
     `
     gallery.appendChild(card)
   }
@@ -57,6 +58,10 @@ const clearBtnFX = () => {
 }
 const currentBtnFX = (btn) => {
   btn.style.boxShadow = "0px 1px 5px black"
+}
+//BUCKET FUNCTIONS
+const addToBucket = (item) => {
+  //FIXME: first thing. Then work on the rest of bucket functions.
 }
 
 printAll()
