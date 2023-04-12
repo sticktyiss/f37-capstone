@@ -1,11 +1,16 @@
 {
 "paintings": [
-  {"image": "some file", "title": "Painting", "desc": "Pretty painting", "Price": [3, 30]}
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
+  {"image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30}
 ],
 "resin": [
-  {"image": "some file", "title": "Resin", "desc": "Cool resin", "Price": 5}
+  {"image": "some file", "title": "Resin", "desc": "Cool resin", "price": 5}
 ],
 "jewelry": [
-  {"image": "some file", "title": "Bracelet", "desc": "Sparkly jewelry", "Price": 30}
+  {"image": "some file", "title": "Bracelet", "desc": "Sparkly jewelry", "price": 30}
 ]
 }

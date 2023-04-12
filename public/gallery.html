@@ -19,22 +19,23 @@
   </nav>
 </header>
 <main>
-  <aside>
-    <h2>Bucket</h2>
-    <form>
-      <input type="checkbox" id="paintings">
-      <label>Paintings</label><br>
-      <input type="checkbox" id="jewelry">
-      <label>Jewelry</label><br>
-      <input type="checkbox" id="resin">
-      <label>Resin</label><br>
-    </form>
-    <button class="button">Paintings</button>
+  <aside id="gallerySort">
+    <h2>Gallery</h2>
+    <button class="button" id="all">All</button>
+    <button class="button" id="paintings">Paintings</button>
     <button class="button" id="jewelry">Jewelry</button>
     <button class="button" id="resin">Resin</button>
+    <form>
+      <input type="number" placeholder="min">
+      <p>-</p>
+      <input type="number" placeholder="max">
+      <button type="submit">Sort</button>
+    </form>
   </aside>
-  <section id="gallery">
-  </section>
+  <section id="gallery"></section>
+  <aside id="bucket">
+    <h2>Bucket</h2>
+  </aside>
 </main>
 <footer>
 
