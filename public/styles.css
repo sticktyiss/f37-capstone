@@ -4,23 +4,79 @@
   box-sizing: border-box;
 }
 header {
-  min-height: 20vh;
-  max-height: 15vh;
+  height: 15vh;
   background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*FIXME: header css is poopy*/
+header div {
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 header img {
-  max-height: 10vh;
-  max-width: 10vw;
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  max-height: 11vh;
+  max-width: 11vw;
+}
+nav {
+  /* padding-top: 3vh; */
+  height: 5vh;
+  align-self: stretch;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
 }
 main {
   display: flex;
 }
 aside {
   width: 15vw;
-  position: sticky;
-  /* justify-content: center; */
 }
-
+aside div {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#gallerySort > div > button {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  width: 80%;
+  border-radius: 10px;
+}
+#gallerySort button:hover {
+  box-shadow: 0px 1px 5px black;
+}
+#gallerySort form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+#gallerySort form input {
+  width: 20%;
+  height: fit-content;
+}
+#gallerySort form button {
+  width: fit-content;
+  margin-left: 5%;
+  height: fit-content;
+}
 #gallery {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +85,7 @@ aside {
   align-content: flex-start;
   background-color: lightgray;
   width: 70vw;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 #gallery div {
   background-color: rgb(152, 152, 152);

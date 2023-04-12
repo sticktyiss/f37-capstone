@@ -48,17 +48,37 @@ const printCard = item => {
     gallery.appendChild(card)
   }
 }
+//Button effects
+const clearBtnFX = () => {
+  allBtn.style.boxShadow = ""
+  resinBtn.style.boxShadow = ""
+  paintingsBtn.style.boxShadow = ""
+  jewleryBtn.style.boxShadow = ""
+}
+const currentBtnFX = (btn) => {
+  btn.style.boxShadow = "0px 1px 5px black"
+}
 
 printAll()
+currentBtnFX(allBtn)
+
 allBtn.addEventListener('click', () => {
   gallery.innerHTML = ''
+  clearBtnFX()
+  currentBtnFX(allBtn)
   printAll()})
 paintingsBtn.addEventListener('click', () => {
   gallery.innerHTML = ''
+  clearBtnFX()
+  currentBtnFX(paintingsBtn)
   printPaintings()})
 jewleryBtn.addEventListener('click', () => {
   gallery.innerHTML = ''
+  clearBtnFX()
+  currentBtnFX(jewleryBtn)
   printJewelry()})
 resinBtn.addEventListener('click', () => {
   gallery.innerHTML = ''
+  clearBtnFX()
+  currentBtnFX(resinBtn)
   printResin()})
