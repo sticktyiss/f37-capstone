@@ -9,5 +9,6 @@
   {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 55},
   {"type": "resin", "image": "some file", "title": "Resin", "desc": "Cool resin", "price": 5}
 ],
-"bucket": []
+"bucket": [],
+"email": "theoryofemails@gmail.com"
 }

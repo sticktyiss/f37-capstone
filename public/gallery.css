@@ -1,0 +1,78 @@
+aside {
+  width: 15vw;
+  background-image: url("");
+}
+aside div {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#gallerySort > div > button {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  width: 80%;
+  border-radius: 10px;
+}
+#gallerySort button:hover {
+  box-shadow: 0px 1px 5px black;
+}
+#gallerySort form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+#gallerySort form input {
+  width: 20%;
+  height: fit-content;
+}
+#gallerySort form button {
+  width: fit-content;
+  margin-left: 5%;
+  height: fit-content;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  background-color: lightgray;
+  width: 70vw;
+  min-height: 100vh;
+}
+#gallery div {
+  background-color: rgb(152, 152, 152);
+  box-shadow: 5px 5px 5px black;
+  margin: 3%;
+  padding: 1%;
+}
+#gallery div img {
+  max-height: 100px;
+  max-width: 100px;
+}
+#bucketList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#bucketList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 3px;
+  padding: 5%;
+  height: 7vw;
+  align-items: center;
+}
+#bucketList img {
+  height: 100%;
+}
