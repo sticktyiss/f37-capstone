@@ -95,6 +95,25 @@ aside div {
   max-height: 100px;
   max-width: 100px;
 }
+#bucketList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#bucketList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 3px;
+  padding: 5%;
+  height: 7vw;
+  align-items: center;
+}
+#bucketList img {
+  height: 100%;
+}
 footer {
   background-color: grey;
   min-height: 20vh;

@@ -4,7 +4,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 
-const { getPaintings, getJewelry, getResin } = require('./controller')
+const { getPaintings, getJewelry, getResin, getAll, addToBucket, removeFromBucket } = require('./controller')
 
 app.use(express.json())
 app.use(cors())
@@ -14,7 +14,9 @@ app.use(express.static(`${__dirname}/public`))
 app.get('/paintings', getPaintings)
 app.get('/resin', getResin)
 app.get('/jewelry', getJewelry)
-//Cart requests
-// app.put('/cart')
+app.get('/all', getAll)
+//BUCKET requests
+app.post('/bucket', addToBucket)
+app.delete('/bucket/:index', removeFromBucket)
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
