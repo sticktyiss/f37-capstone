@@ -133,10 +133,8 @@ const showSendOrderBtn = () => {
     sendOrderBtn.classList = "hide"
   }
 }
-// console.log(sendOrderForm.innerHTML)
 const showSendOrderForm = () => {
   if(sendOrderBtn.classList.value === ""){
-    console.log('hit if')
     sendOrderForm.classList = ""
   } else {
     sendOrderForm.classList = "hide"

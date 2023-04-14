@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Theory's Art</title>
-  <!-- <link href="./reset.css" rel="stylesheet"> -->
+  <link href="./reset.css" rel="stylesheet">
   <link href="./styles.css" rel="stylesheet">
   <link href="./gallery.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../images/Theory Logo - black.png">
@@ -26,23 +26,24 @@
 <main>
   <aside id="gallerySort">
     <div>
-      <h2>Gallery</h2>
+      <h2>GALLERY</h2>
       <button class="button" id="all">All</button>
       <button class="button" id="paintings">Paintings</button>
       <button class="button" id="jewelry">Jewelry</button>
       <button class="button" id="resin">Resin</button>
       <form id="sortPrice">
+        <label>Price:</label>
         <input type="number" placeholder="min" id="minSort">
         <p>-</p>
         <input type="number" placeholder="max" id="maxSort">
-        <button type="submit">Sort Price</button>
+        <button type="submit">Sort</button>
       </form>
     </div>
   </aside>
   <section id="gallery"></section>
   <aside>
     <div id="bucket">
-      <h2>Bucket</h2>
+      <h2>BUCKET</h2>
       <ul id="bucketList"></ul>
     </div>
     <div>
@@ -53,6 +54,7 @@
         <label for="email">Email:</label>
         <input type="email" name="email" placeholder="Email Address" required><br>
         <input type="hidden" name="_subject" value="New Order!">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/gallery.html">
         <input type="hidden" name="_autoresponse" value="Thank you for reaching out! Your email has been received and will be reviewed at the soonest convenience.
         
         - Theory">
@@ -62,7 +64,7 @@
   </aside>
 </main>
 <footer>
-
+  <p>For all socials and other links</p><p>check out my <a href="https://linktr.ee/theorylinks" target="_blank">linktree</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
