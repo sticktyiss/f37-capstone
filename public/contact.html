@@ -25,7 +25,20 @@
 <main>
   <aside id="asideLeft"></aside>
   <section>
-
+    <h2>Contact</h2>
+    <p>Send me an inquiry, commission, order, or just a message saying hi!</p>
+    <form action="https://formsubmit.co/theoryofemails@gmail.com" method="POST" name="emailForm">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Email Address" required><br>
+      <input type="text" name="message" placeholder="Write your message here..."><br>
+      <input type="hidden" name="_subject" value="New submission!">
+      <input type="hidden" name="_autoresponse" value="Thank you for reaching out! Your email has been received and will be reviewed at the soonest convenience.
+      
+      - Theory">
+      <button type="submit">Send</button>
+    </form>
   </section>
   <aside id="asideRight"></aside>
 </main>

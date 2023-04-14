@@ -1,6 +1,7 @@
 aside {
   width: 15vw;
   background-image: url("");
+  background-color: white;
 }
 aside div {
   display: flex;
