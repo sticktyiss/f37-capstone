@@ -28,6 +28,9 @@ module.exports = {
   getAll: (req, res) => {
     res.status(200).send(db.items)
   },
+  getBucket: (req, res) => {
+    res.status(200).send(db.bucket)
+  },
   addToBucket: (req, res) => {
     db.bucket.push(req.body)
     res.status(200).send(db.bucket)

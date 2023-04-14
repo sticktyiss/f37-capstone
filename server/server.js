@@ -4,7 +4,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 
-const { getPaintings, getJewelry, getResin, getAll, addToBucket, removeFromBucket } = require('./controller')
+const { getPaintings, getJewelry, getResin, getAll, getBucket, addToBucket, removeFromBucket } = require('./controller')
 
 app.use(express.json())
 app.use(cors())
@@ -16,6 +16,7 @@ app.get('/resin', getResin)
 app.get('/jewelry', getJewelry)
 app.get('/all', getAll)
 //BUCKET requests
+app.get('/bucket', getBucket)
 app.post('/bucket', addToBucket)
 app.delete('/bucket/:index', removeFromBucket)
 

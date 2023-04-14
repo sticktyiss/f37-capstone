@@ -7,6 +7,8 @@ const minVal = document.querySelector('#minSort')
 const maxVal = document.querySelector('#maxSort')
 const gallery = document.querySelector('#gallery')
 const bucketList = document.querySelector('#bucketList')
+const sendOrderBtn = document.querySelector('button[class="hide"]')
+const sendOrderForm = document.querySelector('#sendOrderForm')
 
 const baseURL = "http://localhost:4754"
 let arr = []
@@ -111,6 +113,7 @@ const addToBucket = (item) => {
   axios.post(`${baseURL}/bucket`, item)
   .then(res => {
     printBucketItem(res.data)
+    showSendOrderBtn()
   })
   .catch(theseHands => console.log(theseHands))
 }
@@ -118,9 +121,28 @@ const removeFromBucket = (bucketIndex) => {
   axios.delete(`${baseURL}/bucket/${bucketIndex}`)
   .then(res => {
     printBucketItem(res.data)
+    showSendOrderBtn()
+    showSendOrderForm()
   })
   .catch(theseHands => console.log(theseHands))
 }
+const showSendOrderBtn = () => {
+  if(bucketList.innerHTML !== ""){
+  sendOrderBtn.classList = ""
+  } else {
+    sendOrderBtn.classList = "hide"
+  }
+}
+// console.log(sendOrderForm.innerHTML)
+const showSendOrderForm = () => {
+  if(sendOrderBtn.classList.value === ""){
+    console.log('hit if')
+    sendOrderForm.classList = ""
+  } else {
+    sendOrderForm.classList = "hide"
+  }
+}
+
 
 printAll()
 currentBtnFX(allBtn)
@@ -143,5 +165,5 @@ resinBtn.addEventListener('click', () => {
   printResin()})
 sortForm.addEventListener('submit', (e) => {
   e.preventDefault()
-  handleItems(minVal.value?+minVal.value:false, maxVal.value?+maxVal.value:false)
-})
+  handleItems(minVal.value?+minVal.value:false, maxVal.value?+maxVal.value:false)})
+sendOrderBtn.addEventListener('click', showSendOrderForm)

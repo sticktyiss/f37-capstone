@@ -77,3 +77,6 @@ aside div {
 #bucketList img {
   height: 100%;
 }
+.hide {
+  display: none;
+}

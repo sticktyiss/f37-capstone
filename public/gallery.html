@@ -26,17 +26,17 @@
 <main>
   <aside id="gallerySort">
     <div>
-    <h2>Gallery</h2>
-    <button class="button" id="all">All</button>
-    <button class="button" id="paintings">Paintings</button>
-    <button class="button" id="jewelry">Jewelry</button>
-    <button class="button" id="resin">Resin</button>
-    <form id="sortPrice">
-      <input type="number" placeholder="min" id="minSort">
-      <p>-</p>
-      <input type="number" placeholder="max" id="maxSort">
-      <button type="submit">Sort Price</button>
-    </form>
+      <h2>Gallery</h2>
+      <button class="button" id="all">All</button>
+      <button class="button" id="paintings">Paintings</button>
+      <button class="button" id="jewelry">Jewelry</button>
+      <button class="button" id="resin">Resin</button>
+      <form id="sortPrice">
+        <input type="number" placeholder="min" id="minSort">
+        <p>-</p>
+        <input type="number" placeholder="max" id="maxSort">
+        <button type="submit">Sort Price</button>
+      </form>
     </div>
   </aside>
   <section id="gallery"></section>
@@ -45,6 +45,20 @@
       <h2>Bucket</h2>
       <ul id="bucketList"></ul>
     </div>
+    <div>
+      <button class="hide">Send Order</button>
+      <form action="https://formsubmit.co/03e4e3e978e239a8c812bd20d50d050e" method="POST" id="sendOrderForm" class="hide">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Email Address" required><br>
+        <input type="hidden" name="_subject" value="New Order!">
+        <input type="hidden" name="_autoresponse" value="Thank you for reaching out! Your email has been received and will be reviewed at the soonest convenience.
+        
+        - Theory">
+        <button type="submit">Place Order</button>
+      </form>
+      </div>
   </aside>
 </main>
 <footer>
