@@ -72,7 +72,7 @@ const printBucketItem = bucket => {
       <p class=' bucketPrices'>${bucket[i].price}</p>
       <button class="rmItem" onclick="removeFromBucket(${i})">Remove</button>
     </div>
-    `//FIXME: LINE 71 onclick invocation may be wrong for removing the item from the bucket
+    `
     bucketList.appendChild(addedItem)
   }
 }
