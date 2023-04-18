@@ -1,5 +1,22 @@
-//FIXME: FIRST THING IS TO 
-//make button in contact form to insert the bucket into 
-//create function to access bucket in database
+asideL = document.querySelector("#asideLeft")
 
 const baseURL = "http://localhost:4754" 
+
+
+//aside slide show
+imageI = 1
+const asideImgChange = () => {
+  images = ['../images/spray-pattern.jpg', 'beads.jpg']
+
+  asideL.style.backgroundImage = images[imageI]
+  if(imageI < 2){
+    imageI++
+  } else {
+    imageI = 1
+  }
+  asideL.style.transitionDelay = '3s'
+  asideL.transitionDuration = '2s'
+  asideImgChange()
+}
+
+asideImgChange()

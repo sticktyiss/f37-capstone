@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Theory's Art</title>
   <link href="./reset.css" rel="stylesheet">
-  <link href="./styles.css" rel="stylesheet">
   <link href="./gallery.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../images/Theory Logo - black.png">
 </head>
@@ -46,13 +45,14 @@
       <h2>BUCKET</h2>
       <ul id="bucketList"></ul>
     </div>
+    <button class="hide">Add Items to Order</button>
     <div>
-      <button class="hide">Send Order</button>
-      <form action="https://formsubmit.co/03e4e3e978e239a8c812bd20d50d050e" method="POST" id="sendOrderForm" class="hide">
+      <form action="https://formsubmit.co/03e4e3e978e239a8c812bd20d50d050e" method="POST" id='bucketForm'>
         <label for="name">Name:</label>
         <input type="text" name="name" required><br>
         <label for="email">Email:</label>
         <input type="email" name="email" placeholder="Email Address" required><br>
+        <input type="text" name="message" class="hide" id="bucketMsg" value="">
         <input type="hidden" name="_subject" value="New Order!">
         <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/gallery.html">
         <input type="hidden" name="_autoresponse" value="Thank you for reaching out! Your email has been received and will be reviewed at the soonest convenience.
@@ -64,7 +64,7 @@
   </aside>
 </main>
 <footer>
-  <p>For all socials and other links</p><p>check out my <a href="https://linktr.ee/theorylinks" target="_blank">linktree</a></p>
+  <a href="https://linktr.ee/theorylinks" target="_blank">linktree</a>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

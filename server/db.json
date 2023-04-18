@@ -1,14 +1,14 @@
 {
 "items": [
-  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 30},
-  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 23},
+  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Pie", "desc": "Pretty painting", "price": 30},
+  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Crust", "desc": "Pretty painting", "price": 23},
   {"type": "jewelry", "image": "some file", "title": "Bracelet", "desc": "Sparkly jewelry", "price": 30},
-  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 12},
+  {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Best Painting", "desc": "Pretty painting", "price": 12},
   {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 45},
   {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 80},
   {"type": "painting", "image": "../images/Theory Logo - black.png", "title": "Painting", "desc": "Pretty painting", "price": 55},
-  {"type": "resin", "image": "some file", "title": "Resin", "desc": "Cool resin", "price": 5}
+  {"type": "resin", "image": "some file", "title": "Resin Dice", "desc": "Cool resin", "price": 5},
+  {"type": "jewelry", "image": "some file", "title": "Necklace", "desc": "Sparkly jewelry", "price": 30}
 ],
-"bucket": [],
-"email": "theoryofemails@gmail.com"
+"bucket": []
 }

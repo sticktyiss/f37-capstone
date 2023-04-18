@@ -7,8 +7,9 @@ const minVal = document.querySelector('#minSort')
 const maxVal = document.querySelector('#maxSort')
 const gallery = document.querySelector('#gallery')
 const bucketList = document.querySelector('#bucketList')
-const sendOrderBtn = document.querySelector('button[class="hide"]')
-const sendOrderForm = document.querySelector('#sendOrderForm')
+const addItemOrderBtn = document.querySelector('button[class="hide"]')
+const bucketMsg = document.querySelector('#bucketMsg')
+const bucketForm = document.querySelector('#bucketForm')
 
 const baseURL = "http://localhost:4754"
 let arr = []
@@ -113,7 +114,7 @@ const addToBucket = (item) => {
   axios.post(`${baseURL}/bucket`, item)
   .then(res => {
     printBucketItem(res.data)
-    showSendOrderBtn()
+    showBucketForm()
   })
   .catch(theseHands => console.log(theseHands))
 }
@@ -121,26 +122,34 @@ const removeFromBucket = (bucketIndex) => {
   axios.delete(`${baseURL}/bucket/${bucketIndex}`)
   .then(res => {
     printBucketItem(res.data)
-    showSendOrderBtn()
-    showSendOrderForm()
+    showBucketForm()
   })
   .catch(theseHands => console.log(theseHands))
 }
-const showSendOrderBtn = () => {
+const showBucketForm = () => {
   if(bucketList.innerHTML !== ""){
-  sendOrderBtn.classList = ""
+    console.log('show', bucketForm.display)
+    bucketForm.display.value = "flex"
+    addItemOrderBtn.classList = ""
   } else {
-    sendOrderBtn.classList = "hide"
+    console.log('hide', bucketForm.display)
+    bucketForm.display = "none"
+    addItemOrderBtn.classList = "hide"
   }
 }
-const showSendOrderForm = () => {
-  if(sendOrderBtn.classList.value === ""){
-    sendOrderForm.classList = ""
-  } else {
-    sendOrderForm.classList = "hide"
-  }
+const addBucketToForm = () => {
+  axios.get(`${baseURL}/bucket`)
+  .then(res => {
+    let items = res.data.map()
+    console.log(items)
+    let msg = document.createElement('input')
+    msg.type = "text"
+    msg.name = `${items}`
+    console.log(msg)
+    // sendOrderForm.appendChild(items)
+  })
+  .catch(theseHands => console.log(theseHands))
 }
-
 
 printAll()
 currentBtnFX(allBtn)
@@ -164,4 +173,5 @@ resinBtn.addEventListener('click', () => {
 sortForm.addEventListener('submit', (e) => {
   e.preventDefault()
   handleItems(minVal.value?+minVal.value:false, maxVal.value?+maxVal.value:false)})
-sendOrderBtn.addEventListener('click', showSendOrderForm)
+// sendOrderBtn.addEventListener('click', showSendOrderForm)
+// sendOrderForm.addEventListener('submit', addBucketToForm)

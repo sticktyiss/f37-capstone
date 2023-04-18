@@ -59,7 +59,7 @@ nav a:hover{
 main {
   display: flex;
   background-color: lightgrey;
-  min-height: 85vh;
+  min-height: 70vh;
 }
 aside {
   width: 15vw;
@@ -84,11 +84,35 @@ aside {
 section {
   background-color: lightgrey;
   width: 70vw;
-  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vh;
+  height: 65vh;
+  background-color: white;
+  border-radius: 50%;
+}
+section h2 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 8vh;
+  margin: 3vh;
+  /* margin-top: 10vh; */
+}
+section p {
+  margin: 3vh;
+  width: 70%;
+  text-align: center;
 }
 footer {
   background-color: black;
-  min-height: 20vh;
+  min-height: 15vh;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
@@ -97,17 +121,10 @@ footer {
   font-weight: bold;
   color: rgb(188, 188, 188);
 }
-footer p {
-  text-shadow: 0px 0px 3px white;
-  text-align: center;
-  font-size: larger;
-  margin: 1vh;
-  letter-spacing: 5px;
-}
 footer a {
   color: black;
   text-decoration: none;
-  padding: 3px 10px 3px 10px;
+  padding: 10px;
   background-color: #43E660;
   border-radius: 10px;
   border: 1px solid white;
