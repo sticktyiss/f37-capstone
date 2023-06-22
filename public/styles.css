@@ -73,6 +73,9 @@ aside {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   box-shadow: 0px 0px 5px black;
+  transition-delay: 4s;
+  transition-duration: 2s;
+
 }
 #asideRight {
   margin: 5px;

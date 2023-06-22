@@ -14,9 +14,9 @@ const asideImgChange = () => {
   } else {
     imageI = 1
   }
-  asideL.style.transitionDelay = '3s'
-  asideL.transitionDuration = '2s'
-  asideImgChange()
+  console.log(asideL.transitionDelay)
+  console.log(asideL.transitionDuration)
+  // asideImgChange()
 }
 
 asideImgChange()
