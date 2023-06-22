@@ -48,7 +48,8 @@ const printAll = () => {
 }
 //FUNCTIONS TO PRINT ITEMS
 const printCard = items => {
-  gallery.innerHTML = ''
+  // gallery.innerHTML = ''
+  gallery.innerHTML = '<h3>Items are unavailable at the moment. A database is getting reconfigured.</h3>' //TODO: FIXME: Change this once a better hosting is figured out.
   items.reverse()
   for(let i=0; i<items.length; i++){
     let card = document.createElement('div')
